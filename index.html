@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <title>Sigma Chi - Beta Lambda Chapter at Duke University</title>
+    <style type="text/css">
+           #carousel {
+               background-image: url(images/header1.jpg);
+               background-repeat: no-repeat;
+               background-size: 100% auto;
+               height: 64vw;
+           }
+
+           #wrapper {
+               position: relative;
+           }
+
+           #carousel::before {
+               content: '';
+               width: 100%;
+               height:200px;
+               display: block;
+               position: absolute;
+               top: 0;
+               left: 0;
+               background: linear-gradient(to bottom, rgba(0,43,73,1) 0%, rgba(0,43,73,.8) 50%, rgba(0,43,73,0.6) 75%, rgba(0,0,0,0) 100%);
+           }
+
+           #carousel::after {
+               content: '';
+               width: 100%;
+               height:200px;
+               display: block;
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               background: linear-gradient(to top, rgba(0,43,73,1) 0%, rgba(0,43,73,.8) 50%, rgba(0,43,73,0.6) 75%, rgba(0,0,0,0) 100%);
+           }
+
+           #nav {
+               color: #ffffff;
+               font-family: 'Oswald', sans-serif;
+               text-transform: uppercase;
+               font-size: 14pt;
+               list-style: none;
+               display: flex;
+           }
+
+           #nav a {
+               color: #ffffff;
+               text-decoration: none;
+           }
+
+           #nav > li {
+               margin-right: 10%;
+           }
+
+           #jumbotext {
+               font-size: 6vw;
+               color: #fed141;
+               font-family: 'Oswald', sans-serif;
+               text-transform: uppercase;
+               margin-top: 12vw;
+               position: relative;
+               z-index: 2;
+           }
+
+           #body {
+               background-color: #002b49;
+           }
+
+           #blurb {
+               color: #ffffff;
+               text-transform: uppercase;
+               font-family: 'Oswald', sans-serif;
+               font-size: 20pt;
+               text-align: center;
+           }
+
+           .logo img {
+               width: 400px;
+               margin-left: 10%;
+               max-width:100%;
+               max-height:100%;
+           }
+
+           .slider img {
+               max-width: 90%;
+               max-width: 90%;
+               margin: auto;
+           }
+
+           .heading {
+               color: #ffffff;
+               text-transform: uppercase;
+               font-family: 'Oswald', sans-serif;
+               font-size: 30pt;
+               margin: auto;
+           }
+
+           .divider {
+               width: 30%;
+               height: 5px;
+               background-color: #fed141;
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 10px;
+               margin-bottom: 20px;
+           }
+
+           .bodytext {
+               color: #ffffff;
+               font-family: 'Roboto', sans-serif;
+               font-size: 12pt;
+               text-align: center;
+               margin-bottom: 50px;
+           }
+
+           #philanthropy {
+               background-image: url(images/section1.jpg);
+               background-size: cover;
+               margin-bottom: 50px;
+               padding-top: 50px;
+               padding-bottom: 50px;
+           }
+
+           #recruitment {
+               background-image: url(images/section2.jpg);
+               background-size: cover;
+               margin-bottom: 50px;
+               padding-top: 50px;
+               padding-bottom: 50px;
+           }
+
+           #address {
+               color: #ffffff;
+               font-size: 20pt;
+           }
+
+           #consul {
+               color: #ffffff;
+               font-size: 20pt;
+           }
+
+           #footer {
+               height: 200px;
+               background-color: #000000;
+               margin-top: 100px;
+               color: #ffffff;
+               font-family: 'Roboto', sans-serif;
+           }
+
+           #socialmedia img{
+            width: 76px;
+            max-width: 100%;
+            height: auto;
+               margin-right: 30px;
+               float: right;
+           }
+
+           #socialmedia {
+               margin-right: 100px;
+           }
+
+           .navbar-brand img{
+                width: 400px;
+           }
+
+
+
+
+
+       @media screen and (max-width: 992px) {
+
+           .navbar-brand img{
+                width: 350px;
+           }
+
+            #carousel::before {
+               content: '';
+               width: 100%;
+               height:160px;
+               display: block;
+               position: absolute;
+               top: 0;
+               left: 0;
+               background-color: #002b49;
+           }
+
+           .nav-item {
+            background-color: #002b49;
+            padding-left: 3rem;
+            border-bottom: 1px solid #00518a;
+           }
+
+           .nav-item:nth-child(1){
+            border-top: 1px solid #00518a;
+           }
+
+           .navbar {
+            padding: 0;
+           }
+
+           .navbar-brand {
+            padding: .5rem 1rem;
+           }
+
+           .navbar-toggler {
+            margin: .5rem 1rem;
+           }
+
+           #carousel {
+            background-position: 0 100px;
+           }
+
+           #jumbotext {
+            margin-top: 16vw;
+           }
+
+
+       }
+
+       @media screen and (max-width: 768px) {
+
+           .navbar-brand img{
+                width: 300px;
+           }
+
+            #carousel::before {
+               content: '';
+               width: 100%;
+               height:140px;
+               display: block;
+               position: absolute;
+               top: 0;
+               left: 0;
+               background-color: #002b49;
+           }
+
+           #jumbotext {
+            margin-top: 20vw;
+           }
+
+           #carousel {
+            background-position: 0 100px;
+           }
+
+           #carousel::after {
+               display: none;
+        }
+
+        #blurb {
+            margin-top:50px;
+        }
+
+
+
+
+
+       }
+
+       @media screen and (max-width: 576px) {
+
+           .navbar-brand img{
+                width: 200px;
+           }
+
+            #carousel::before {
+               content: '';
+               width: 100%;
+               height:100px;
+               display: block;
+               position: absolute;
+               top: 0;
+               left: 0;
+               background-color: #002b49;
+           }
+
+                      .nav-item {
+            padding-left: 2rem;
+           }
+
+           #carousel {
+            background-position: 0% 50px;
+           }
+
+           #carousel::after {
+               display: none;
+        }
+
+        #blurb {
+            margin-top:50px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="jumbotron jumbotron-fluid p-0 m-0" id="carousel">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand" href="#"><img src="images/logo.png"></a> <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarText" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active pr-5">
+                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown pr-5">
+                                    <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" role="button">About</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#about">About Us</a> <a class="dropdown-item" href="#philanthropy">Philanthropy</a> <a class="dropdown-item" href="#brotherhood">Brotherhood</a> <a class="dropdown-item" href="#recruitment">Recruitment</a><a class="dropdown-item" href="#international">International Fraternity</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown pr-5">
+                                    <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" role="button">Brothers</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="executive.html">Executive Board</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item pr-5 dropdown pr-5">
+                                    <a aria-expanded="false" aria-haspopup="true" class="nav-link" data-toggle="dropdown" href="#" role="button">Alumni</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="Homecoming 2018.pdf">Homecoming 2018</a>
+                                        <a class="dropdown-item" href="significantsigs.html">Significant Sigs</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+            <div id="header">
+                <div class="container-fluid">
+                    <div class="row" id="topbar">
+                        <!--<div class="col logo">
+                        <img src="images/logo.png">
+                    </div>
+                    <div class="col align-self-center">
+                        <ul id="nav" class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown"><a href="#about">About</a><div class="dropdown-content">
+    <a href="#philanthropy">Philanthropy</a>
+    <a href="#brotherhood">Brotherhood</a>
+    <a href="#recruitment">Recruitment</a>
+  </div></li>
+                            <li class="dropdown"><a href="brothers.html">Brothers</a><div class="dropdown-content">
+    <a href="executive.html">Executive Board</a>
+  </div></li>
+                            <li><a href="alumni.html">Alumni</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+                        </ul>
+                    </div>-->
+                    </div>
+                    <div class="text-center" id="jumbotext">
+                        Friendship, justice, and learning.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="body"><div class="container-fluid">
+        <div class="row">
+            <div class="col-10 offset-1" id="blurb">
+                The Beta Lambda Chapter of Sigma Chi prides itself as a fraternity composed of different temperaments, talents, and convictions. As Sigs, we employ our diversity to build the strongest brotherhood on Duke University's campus.
+            </div>
+        </div><br>
+        <br>
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div class="slider">
+                    <div><img src="images/slider1.jpg"></div>
+                    <div><img src="images/slider2.jpg"></div>
+                    <div><img src="images/slider3.jpg"></div>
+                    <div><img src="images/slider4.jpg"></div>
+                </div>
+            </div>
+        </div><br>
+        <br>
+        <div class="row">
+            <a id="about"></a>
+            <div class="heading text-center">
+                About Us
+            </div>
+        </div>
+        <div class="row">
+            <div class="divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1 bodytext">
+                Founded in 1912, the Sigma Chi Beta Lambda has been a fixture on Duke’s campus for more than a century. The Beta Lambda chapter prides itself as a fraternity composed of different temperaments, talents, and convictions. As Sigs, we employ our diversity to build the strongest brotherhood on campus.
+            </div>
+        </div></div>
+        <div id="philanthropy" class="container-fluid">
+            <div class="row">
+                <div class="heading text-center">
+                    Philanthropy
+                </div>
+            </div>
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+            <div class="col-10 offset-1 bodytext">
+                Sigma Chi prides itself on giving back. In the fall of 2017, the Beta Lambda Chapter brought back Derby Days to benefit the Huntsman Cancer Institute, and raised $10,000 for cancer research. We are proud to partner with this organization and look to build upon our successful campaign last year.
+            </div>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+            <a id="brotherhood"></a>
+            <div class="heading text-center">
+                Brotherhood
+            </div>
+        </div>
+        <div class="row">
+            <div class="divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1 bodytext">
+                Brotherhood takes many forms at Sigma Chi, whether that be helping each other with homework, sharing a meal together, hanging out or working out together. It may also be playing Q’s on Thursdays or playing beer frisbee on Saturdays. <br><br/>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CwmpLZHKF4Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <br><br/>
+                We are diverse as a result of our different temperaments, talents, and convictions and remain bound by the three great aims of Sigma Chi: Friendship, Justice, and Learning.
+            </div>
+        </div></div>
+        <div id="recruitment" class="container-fluid">
+            <div class="row">
+                <div class="heading text-center">
+                    Recruitment
+                </div>
+            </div>
+            <div class="row">
+                <div class="divider"></div>
+            </div>
+            <div class="col-10 offset-1 bodytext">
+                The Beta Lambda chapter of Sigma Chi is a proud member of the Greek community at Duke University, but an even prouder member of the university community as a whole. For this reason, recruitment is one of our favorite times of the year. As the next class of students join in the energy and excitement of exploring Greek Life, Sigma Chi seeks to showcase the fun and welcoming brotherhood each of us came to love during his respective recruitment periods. The brothers are anxious to extend a warm welcome to all the prospective members of Greek Life and to seek true friendship with newcomers as we help to facilitate this extremely exciting and important decision process.<br/><br/>
+
+As do all of Duke’s IFC fraternities, the official rush process begins in January, just before classes start. If you have any questions, please contact one of our recruitment chairs Alex White (alejandro.white@duke.edu), Chris Van Buren (peter.van.buren@duke.edu), or Justin Nickelsburg (jmn52@duke.edu).
+            </div>
+        </div><div class="container-fluid">
+          <div class="row">
+            <a id="international"></a>
+            <div class="heading text-center">
+                International Fraternity
+            </div>
+        </div>
+        <div class="row">
+            <div class="divider"></div>
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1 bodytext">
+                Sigma Chi is the largest men's leadership organization in the country. With 242 chapters and over 300,000 brothers, Sigs are everywhere. That is one of the qualities that makes Sigma Chi special. It's not only a fantastic network of brothers all around the United States and Canada, but a band of brothers who are there to help one another.
+<br/><br/>
+Beta Lambda executive officers consistently travel to Balfour Leadership Training Workshop for a weekend each summer with upwards of 2,000 other Sigma Chis, providing a fantastic experience to learn from and meet active brothers and alumni. Our chapter has also sent representatives to the Horizons program, which unites brothers in an incredible outdoor adventure in Snowbird, Utah. Both of these programs are unique to Sigma Chi and offer once-in-a-lifetime experiences.
+
+            </div>
+        </div>
+        <div class="row">
+            <a id="contact"></a>
+            <div class="heading text-center">
+                Contact Us
+            </div>
+        </div>
+        <div class="row">
+            <div class="divider"></div>
+        </div>
+        <div class="row">
+            <div class="col"><img width="800" height="400" src="images/temp section.jpg"></div>
+            <div class="col text-center align-self-center" id="address">
+                Mailing Address:<br>
+                Beta Lambda Sigma Chi<br>
+                07 Bryan Center, Box 90840<br>
+                Durham, NC 27708<br>
+                <br>
+                Our Section:<br>
+                440 Chapel Dr.<br>
+                Craven VO and VOO<br>
+                Durham, NC 27708
+            </div>
+        </div><br>
+        <br>
+        <div class="row text-center" id="consul">
+            <div class="col">
+                Sean Holt<br>
+                Consul (President)<br>
+                srh58@duke.edu
+            </div>
+        </div></div>
+        <div id="footer" class="container-fluid">
+            <div class="row">
+                <div class="col logo align-self-center"><img src="images/logo.png"></div>
+                <div class="col align-self-center" id="socialmedia"><a href="https://www.facebook.com/dukesigs/"><img src="images/facebook.png"></a> <a href="https://www.instagram.com/sigmachiduke/"><img src="images/instagram.png"></a></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+    <script src="slick/slick.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+           $(document).ready(function(){
+             $('.slider').slick({
+                 infinite: true,
+                 slidesToShow: 3,
+                 slidesToScroll: 3
+             });
+         });
+    </script>
+</body>
+</html>
